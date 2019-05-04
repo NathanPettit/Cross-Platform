@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>music_assistant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ios settigns-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--css paths-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+<link rel="stylesheet" href="css/custom.css" />
+<!--cordova-->
+<script type="text/javascript" src="cordova.js"></script>
+<title>index</title>
+</head>
+
+<body class="online">
+<!--index-->
+<div data-role="page" id="index" data-theme="b">
+	<div data-role="header">
+		<h1>Search for a song</h1>
+		
+	</div>
+	<div data-role="content" class="content">
+	<form action="/action_page.php" id="log">
+				  <div class="imgcontainer">
+					<img id="biglogo" src="images/biglogo.png" class="center">
+				  </div>
+				  <div id="main">
+				  <h2 align="center"><i>Search for a song and play along!</i></h2>
+				</div>
+				  <div class="container">
+					<label for="artist"><b>Artist name</b></label>
+					<input type="text" placeholder="Artist name" name="artist" required>
+
+					<label for="song"><b>Song Title</b></label>
+					<input type="text" placeholder="Song Title" name="song" required>
+						
+					<button href="lyrics.html" id="search">Search</button>
+				  </div>
+				  
+				  			 	   
+			</form>
+	</div>
+	<footer class="footer">
+	<div data-role="navbar">
+			<ul class="foot">
+			<li><a href="favs.html" data-transition="none" data-icon="star">Favourites</a></li>
+			<li><a href="#" data-icon="info" onclick="window.open(encodeURI('https://twitter.com/Music_Assistant'), '_system')">Dev Blog</a></li>
+			<li><a href="lyrics.html" data-transition="none" data-icon="grid">Recordings</a></li>
+			</ul>
+		</div>
+</footer>
+</div>
+
+
+
+
+<!--js paths-->
+<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jqm_defaults.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
